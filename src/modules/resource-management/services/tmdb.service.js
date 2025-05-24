@@ -4,7 +4,7 @@ import { Video } from '../model/video.entity.js';
 import { Image } from '../model/image.entity.js';
 import { Credit } from '../model/credit.entity.js';
 
-const { default: axios } = require("axios");
+import axios from 'axios';
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const API_URL = import.meta.env.VITE_TMDB_API_URL;
@@ -50,4 +50,8 @@ export class TMDBService {
         return { cast, crew };
     }
 
+    async fetchRaw(endpoint) {
+    const response = await http.get(endpoint);
+    return response.data;
+    }
 }
