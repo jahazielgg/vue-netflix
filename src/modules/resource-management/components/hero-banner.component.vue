@@ -1,5 +1,5 @@
 <script>
-import { Movie } from '../model/movie.entity';
+import { Movie } from '../model/movie.entity.js';
 
 export default {
     name: 'HeroBanner',
@@ -11,11 +11,13 @@ export default {
     },
     computed: {
         backgroundStyle() {
-            return {
-                backgroundImage: `url(${this.movie.fullBackdropUrl})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-            };
+        return {
+            backgroundImage: `url(${this.movie.fullBackdropUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '60vh',
+            position: 'relative'
+        };
         }
     }
 }
