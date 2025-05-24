@@ -19,7 +19,7 @@ export class Movie {
         this.genre_ids = genre_ids;
     }
     
-    get fullPoserUrl() {
+    get fullPosterUrl() {
         return `https://image.tmdb.org/t/p/w500${this.poster_path}`;
     }
 
