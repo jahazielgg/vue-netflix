@@ -1,11 +1,13 @@
-<script setup>
-
-</script>
-
 <template>
-
+  <div id="app">
+    <RouterView />
+  </div>
 </template>
 
-<style scoped>
+<script>
+import { RouterView } from 'vue-router';
 
-</style>
+export default {
+  components: { RouterView }
+};
+</script>
