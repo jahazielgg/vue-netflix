@@ -31,7 +31,7 @@ export default {
                 <h1 class="text-5xl font-bold mb-3">{{ movie.title }}</h1>
                 <p class="text-base line-height-3 mb-4">{{ movie.overview }}</p>
                 <div class="flex-gap-3">
-                    <Button label="Watch now" icon="pi pi-play" class="p-button-rounded p-button-lg text-black bg-white border-none" />
+                    <Button label="Watch now" icon="pi pi-play" class="p-button-rounded p-button-lg border-none" /> 
                     <Button label="My list" icon="pi pi-plus" class="p-button-rounded p-button-lg p-button-secondary" />
                 </div>
             </div>
